@@ -87,7 +87,7 @@ const Clock = () => {
     };
     const decrement = (e) => {
         if (e === 'session') {
-            setSession(session - 1)
+            session > 1 && setSession(session - 1)
             // time.m > 1 && setTime({
             //     ...time,
             //     m: time.m - 1 
